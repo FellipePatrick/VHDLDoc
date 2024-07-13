@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felli\Repositorio GitHub\Sistemas Digitais\Lista1\questao004\simulation\qsim
+vTeste
+Z1 IbIQhoJeZP?7f6@g3^VPln3
+Z2 Vf>Dl@n=mm8l7GQT[Kc8:T1
+Z3 dC:\Users\felli\Repositorio GitHub\Sistemas Digitais\Lista1\questao004\simulation\qsim
+Z4 w1720882166
+Z5 8Teste.vo
+Z6 FTeste.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@teste
+!i10b 1
+Z10 !s100 =FQTH4::W`S_Fnegh2]D`2
+!s85 0
+Z11 !s108 1720882166.697000
+Z12 !s107 Teste.vo|
+Z13 !s90 -work|work|Teste.vo|
+!s101 -O0
+vTeste_vlg_check_tst
+!i10b 1
+!s100 JdTf[cSI1NNTV@g?E8CNP2
+I?4Coi9P0NYYm;WSk]d:W23
+V2laDLBzgSjLHQ?QQSL7n<0
+R3
+Z14 w1720882165
+Z15 8Teste.vt
+Z16 FTeste.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1720882166.759000
+Z18 !s107 Teste.vt|
+Z19 !s90 -work|work|Teste.vt|
+!s101 -O0
+R8
+n@teste_vlg_check_tst
+vTeste_vlg_sample_tst
+!i10b 1
+!s100 WKo4I4;fF@kJ;NXl]RL_M2
+I_o>_]7E_@f3Hzl8fU1kN21
+V<obMFP<jYEj<QjQ[YhS9n2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@teste_vlg_sample_tst
+vTeste_vlg_vec_tst
+!i10b 1
+!s100 XdMmAL:KL7NPP59fL4SbS0
+I]bejPA]J6TYJLAXG4bg@]2
+VCFf?aj6?L>@9>]lT1@0KR3
+R3
+R14
+R15
+R16
+L0 156
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@teste_vlg_vec_tst
