@@ -12,5 +12,5 @@ end Teste;
 architecture Gate of Teste is
 begin
     -- Descrição da lógica complexa
-    Y <= A and B and C;
+    Y <= (A and B and C) or (A and B and not C) or (A and not B and C) or (not A and B and C);
 end Gate;
