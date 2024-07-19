@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "07/13/2024 11:49:26"
+// DATE "07/17/2024 14:03:28"
 
 // 
 // Device: Altera EP2C35F672C8 Package FBGA672
@@ -40,9 +40,9 @@ output 	Y;
 
 // Design Ports Information
 // Y	=>  Location: PIN_AF22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// A	=>  Location: PIN_U25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // B	=>  Location: PIN_U26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // C	=>  Location: PIN_V25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// A	=>  Location: PIN_U25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -173,7 +173,7 @@ defparam \A~I .output_sync_reset = "none";
 // Location: LCCOMB_X64_Y13_N16
 cycloneii_lcell_comb \Y~0 (
 // Equation(s):
-// \Y~0_combout  = (\B~combout  & (\C~combout  & \A~combout ))
+// \Y~0_combout  = (\B~combout  & ((\C~combout ) # (\A~combout ))) # (!\B~combout  & (\C~combout  & \A~combout ))
 
 	.dataa(\B~combout ),
 	.datab(vcc),
@@ -183,7 +183,7 @@ cycloneii_lcell_comb \Y~0 (
 	.combout(\Y~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Y~0 .lut_mask = 16'hA000;
+defparam \Y~0 .lut_mask = 16'hFAA0;
 defparam \Y~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 

@@ -239,10 +239,14 @@ TRANSITION_LIST("Teste_vlg_vec_tst|Y")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
 	}
 }
 
@@ -381,10 +385,14 @@ TRANSITION_LIST("Teste_vlg_vec_tst|i1|Y~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
 	}
 }
 

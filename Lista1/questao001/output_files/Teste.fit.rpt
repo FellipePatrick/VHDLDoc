@@ -1,5 +1,5 @@
 Fitter report for Teste
-Sat Jul 13 10:57:34 2024
+Fri Jul 19 12:42:43 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 13 10:57:34 2024           ;
+; Fitter Status                      ; Successful - Fri Jul 19 12:42:43 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Teste                                           ;
 ; Top-level Entity Name              ; Teste                                           ;
@@ -178,7 +178,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digitais/Lista1/questao001/output_files/Teste.pin.
+The pin-out file can be found in C:/Users/felli/Repositorio GitHub/VHDLDoc/Lista1/questao001/output_files/Teste.pin.
 
 
 +--------------------------------------------------------------------+
@@ -208,7 +208,7 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; Total LABs:  partially or completely used   ; 1 / 2,076 ( < 1 % )  ;
 ; Virtual pins                                ; 0                    ;
 ; I/O pins                                    ; 3 / 475 ( < 1 % )    ;
-;     -- Clock pins                           ; 0 / 8 ( 0 % )        ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )       ;
 ;                                             ;                      ;
 ; Global signals                              ; 0                    ;
 ; M4Ks                                        ; 0 / 105 ( 0 % )      ;
@@ -304,8 +304,8 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; A    ; U25   ; 6        ; 65           ; 13           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; B    ; U26   ; 6        ; 65           ; 13           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; A    ; N25   ; 5        ; 65           ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; B    ; N26   ; 5        ; 65           ; 19           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -314,7 +314,7 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Y    ; AF23  ; 7        ; 63           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; Y    ; AE23  ; 7        ; 63           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -327,8 +327,8 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; 2        ; 2 / 59 ( 3 % ) ; 3.3V          ; --           ;
 ; 3        ; 0 / 56 ( 0 % ) ; 3.3V          ; --           ;
 ; 4        ; 0 / 58 ( 0 % ) ; 3.3V          ; --           ;
-; 5        ; 0 / 65 ( 0 % ) ; 3.3V          ; --           ;
-; 6        ; 3 / 59 ( 5 % ) ; 3.3V          ; --           ;
+; 5        ; 2 / 65 ( 3 % ) ; 3.3V          ; --           ;
+; 6        ; 1 / 59 ( 2 % ) ; 3.3V          ; --           ;
 ; 7        ; 1 / 58 ( 2 % ) ; 3.3V          ; --           ;
 ; 8        ; 0 / 56 ( 0 % ) ; 3.3V          ; --           ;
 +----------+----------------+---------------+--------------+
@@ -489,7 +489,7 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE22     ; 236        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE23     ; 244        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE23     ; 244        ; 7        ; Y                                        ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE24     ; 247        ; 6        ; ~LVDS150p/nCEO~                          ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE25     ; 246        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE26     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -514,7 +514,7 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; AF20     ; 223        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF21     ; 227        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF22     ; 235        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF23     ; 243        ; 7        ; Y                                        ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AF23     ; 243        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF24     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF25     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -827,8 +827,8 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; N22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; N23      ; 311        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N24      ; 310        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N25      ; 309        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N26      ; 308        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N25      ; 309        ; 5        ; A                                        ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; N26      ; 308        ; 5        ; B                                        ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P1       ; 68         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P2       ; 67         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P3       ; 69         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -931,8 +931,8 @@ The pin-out file can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digi
 ; U22      ; 270        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U23      ; 284        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U24      ; 283        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U25      ; 285        ; 6        ; A                                        ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; U26      ; 286        ; 6        ; B                                        ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; U25      ; 285        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; U26      ; 286        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V1       ; 90         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V2       ; 91         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V3       ; 95         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1068,8 +1068,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +------+----------+---------------+---------------+-----------------------+-----+
 ; Y    ; Output   ; --            ; --            ; --                    ; --  ;
-; A    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; B    ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; A    ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; B    ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1079,9 +1079,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; A                   ;                   ;         ;
-;      - Y~0          ; 0                 ; 6       ;
 ; B                   ;                   ;         ;
-;      - Y~0          ; 1                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -1103,11 +1101,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+----------------------+
 ; Block interconnects         ; 3 / 94,460 ( < 1 % ) ;
 ; C16 interconnects           ; 0 / 3,315 ( 0 % )    ;
-; C4 interconnects            ; 3 / 60,840 ( < 1 % ) ;
+; C4 interconnects            ; 5 / 60,840 ( < 1 % ) ;
 ; Global clocks               ; 0 / 16 ( 0 % )       ;
 ; Local interconnects         ; 0 / 33,216 ( 0 % )   ;
 ; R24 interconnects           ; 0 / 3,091 ( 0 % )    ;
-; R4 interconnects            ; 1 / 81,294 ( < 1 % ) ;
+; R4 interconnects            ; 0 / 81,294 ( 0 % )   ;
 +-----------------------------+----------------------+
 
 
@@ -1222,7 +1220,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1242,19 +1240,19 @@ Warning (306006): Found 1 output pins without output pin load capacitance assign
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/felli/Repositorio GitHub/Sistemas Digitais/Lista1/questao001/output_files/Teste.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/felli/Repositorio GitHub/VHDLDoc/Lista1/questao001/output_files/Teste.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4876 megabytes
-    Info: Processing ended: Sat Jul 13 10:57:34 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Fri Jul 19 12:42:43 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/felli/Repositorio GitHub/Sistemas Digitais/Lista1/questao001/output_files/Teste.fit.smsg.
+The suppressed messages can be found in C:/Users/felli/Repositorio GitHub/VHDLDoc/Lista1/questao001/output_files/Teste.fit.smsg.
 
 
