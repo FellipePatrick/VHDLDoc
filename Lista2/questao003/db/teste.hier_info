@@ -1,0 +1,11 @@
+|teste
+gray[0] => johnson[0].DATAIN
+gray[1] => johnson[1].DATAIN
+gray[2] => johnson[2].DATAIN
+gray[3] => johnson[3].DATAIN
+johnson[0] <= gray[0].DB_MAX_OUTPUT_PORT_TYPE
+johnson[1] <= gray[1].DB_MAX_OUTPUT_PORT_TYPE
+johnson[2] <= gray[2].DB_MAX_OUTPUT_PORT_TYPE
+johnson[3] <= gray[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

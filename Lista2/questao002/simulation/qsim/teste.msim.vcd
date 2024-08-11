@@ -1,0 +1,268 @@
+$comment
+	File created using the following command:
+		vcd file teste.msim.vcd -direction
+$end
+$date
+	Sun Aug 11 11:04:14 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module teste_vlg_vec_tst $end
+$var reg 5 ! two [4:0] $end
+$var wire 1 " bcd [3] $end
+$var wire 1 # bcd [2] $end
+$var wire 1 $ bcd [1] $end
+$var wire 1 % bcd [0] $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - Mux3~0_combout $end
+$var wire 1 . Mux3~1_combout $end
+$var wire 1 / Mux2~0_combout $end
+$var wire 1 0 Mux2~1_combout $end
+$var wire 1 1 Mux2~2_combout $end
+$var wire 1 2 Mux1~0_combout $end
+$var wire 1 3 Mux1~1_combout $end
+$var wire 1 4 Mux0~0_combout $end
+$var wire 1 5 Mux0~1_combout $end
+$var wire 1 6 Mux0~2_combout $end
+$var wire 1 7 two~combout [4] $end
+$var wire 1 8 two~combout [3] $end
+$var wire 1 9 two~combout [2] $end
+$var wire 1 : two~combout [1] $end
+$var wire 1 ; two~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1%
+1$
+1#
+1"
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+0;
+0:
+09
+08
+07
+$end
+#5000
+b10000 !
+17
+0&
+#10000
+b11000 !
+b1000 !
+18
+07
+1&
+1/
+#15000
+b1100 !
+b11100 !
+19
+17
+0&
+15
+10
+0/
+13
+11
+01
+03
+0#
+0$
+1$
+1#
+#20000
+b11110 !
+b10110 !
+b110 !
+1:
+08
+07
+1&
+12
+00
+1-
+16
+11
+13
+01
+1.
+0"
+0$
+0#
+1$
+0%
+#25000
+b111 !
+b10111 !
+1;
+17
+0&
+05
+02
+0-
+06
+03
+0.
+1"
+1#
+1%
+#30000
+b10011 !
+b11011 !
+b1011 !
+09
+18
+07
+1&
+#35000
+b11011 !
+17
+0&
+#40000
+b11001 !
+b10001 !
+b1 !
+0:
+08
+07
+1&
+14
+1-
+#45000
+b101 !
+b10101 !
+19
+17
+0&
+15
+04
+12
+10
+0-
+16
+1.
+06
+0.
+0"
+0%
+1"
+1%
+#50000
+b10100 !
+b11100 !
+b1100 !
+0;
+18
+07
+1&
+02
+16
+13
+11
+03
+0"
+0#
+0$
+1#
+#55000
+b11100 !
+17
+0&
+06
+01
+1"
+1$
+#60000
+b11110 !
+b11010 !
+b10010 !
+b10 !
+1:
+09
+08
+07
+1&
+05
+14
+00
+16
+11
+06
+01
+0"
+0$
+1"
+1$
+#65000
+b10010 !
+17
+0&
+16
+0"
+#70000
+b11010 !
+b1010 !
+18
+07
+1&
+15
+04
+10
+1-
+06
+16
+11
+1.
+1"
+0"
+0$
+0%
+#75000
+b1011 !
+b1111 !
+b11111 !
+1;
+19
+17
+0&
+05
+00
+0-
+06
+01
+0.
+1"
+1$
+1%
+#80000

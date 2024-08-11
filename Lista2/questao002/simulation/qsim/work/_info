@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felli\Repositorio GitHub\VHDLDoc\Lista2\questao001\simulation\qsim
+vteste
+Z1 IJn<][f=GkzI>VilenRU331
+Z2 Vbb]iE_YU[>Rah7WVAa0jE0
+Z3 dC:\Users\felli\Repositorio GitHub\VHDLDoc\Lista2\questao002\simulation\qsim
+Z4 w1723385053
+Z5 8teste.vo
+Z6 Fteste.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|teste.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 :[HDG@oR2EohnP3``3hlG2
+!s85 0
+Z11 !s108 1723385054.003000
+Z12 !s107 teste.vo|
+!s101 -O0
+vteste_vlg_check_tst
+!i10b 1
+!s100 jIEITZF:eEBG=XXl=7cdL3
+I;Nk=DW@jcTAfIF23?W7e@3
+V`NQ=9kanPmOJ>9D;;HGF:3
+R3
+Z13 w1723385052
+Z14 8teste.vt
+Z15 Fteste.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1723385054.078000
+Z17 !s107 teste.vt|
+Z18 !s90 -work|work|teste.vt|
+!s101 -O0
+R9
+vteste_vlg_sample_tst
+!i10b 1
+!s100 U_Y?7>d[9B<KG5am_>KTn0
+IdhDK8n?M3JE_CA`]YUjG<0
+VoThMfTkV]<f836:;_XHC>0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vteste_vlg_vec_tst
+!i10b 1
+!s100 jnmD;O^0L<6zI<>ZM=J;>0
+IL]`f31j?;Wcn^=Ug<_IOV1
+Z19 VXPSX<fIO^iX[3gUL>4nQH1
+R3
+R13
+R14
+R15
+L0 205
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
