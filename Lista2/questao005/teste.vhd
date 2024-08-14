@@ -1,28 +1,28 @@
-ENTITY teste IS
-    PORT (
-        A, B, Te : IN BIT; 
-        ports    : IN BIT_Vector(0 to 2); 
-        Ts, S    : OUT BIT
+entity teste is
+    port(
+        a0, b0, a1, b1, te0: in bit;
+        saidas: out bit_vector(0 to 6)
     );
-END teste;
+end teste;
 
-ARCHITECTURE comportamento OF teste IS
-BEGIN 
-    PROCESS(ports, Te, A, B)
-    BEGIN
-        IF ports = "001" THEN
-            S  <= (Te XOR A) XOR B;
-            Ts <= (Te AND A) OR (Te AND B) OR (A AND B);
-        ELSIF ports = "011" THEN
-            S  <= (Te XOR A) XOR (NOT B);
-        ELSIF ports = "101" THEN
-            S  <= A OR B;
-        ELSIF ports = "110" THEN
-            S  <= A AND B;
-        ELSIF ports = "100" THEN
-            S  <= A XOR B;
-        ELSIF ports = "000" THEN
-            S  <= '0'; 
-        END IF;
-    END PROCESS;
-END comportamento;
+architecture comportamento of teste is
+    SIGNAL sel: bit_vector(0 to 2); 
+    SIGNAL T: bit;
+begin 
+    sel(0) <= te0 xor a0 xor b0;
+    T <= (te0 and a0) or (te0 and b0) or (a0 and b0);
+    sel(1) <= T xor a1 xor b1;
+    sel(2) <= (T and a1) or (T and b1) or (a1 and b1);
+
+    WITH sel SELECT
+        saidas <=        
+            "1111110" WHEN "000", -- 0
+            "0110000" WHEN "001", -- 1
+            "1101101" WHEN "010", -- 2
+            "1111001" WHEN "011", -- 3
+            "0110011" WHEN "100", -- 4
+            "1011011" WHEN "101", -- 5
+            "1011111" WHEN "110", -- 6
+            "1110000" WHEN "111", -- 7
+            "1111111" WHEN OTHERS; -- 8
+end comportamento;
