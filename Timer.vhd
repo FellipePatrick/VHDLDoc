@@ -1,0 +1,85 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity Timer is
+    generic(clockFreq   :   integer := 50e6);   -- Valor do clock de entrada, DE10 Lite = 50 MHz
+    port (
+        clk     :   in      std_logic;      -- Sinal de clock de entrada
+        nRst    :   in      std_logic;      -- Sinal de reset, ativo em nível baixo
+        segmentos_seg  :   out std_logic_vector(6 downto 0); -- Segmentos para segundos (unidade)
+        segmentos_min  :   out std_logic_vector(6 downto 0); -- Segmentos para minutos (unidade)
+        segmentos_hora :   out std_logic_vector(6 downto 0)  -- Segmentos para horas (unidade)
+    );
+end Timer;
+
+architecture Comportamento of Timer is
+
+    signal s, m, h : integer range 0 to 59;   -- Contadores de segundos, minutos e horas
+    signal ticks   : integer range 0 to clockFreq;  -- Para contagem de ciclos de clock
+
+    signal digito_seg : integer range 0 to 9; -- Unidade dos segundos
+    signal digito_min : integer range 0 to 9; -- Unidade dos minutos
+    signal digito_hora : integer range 0 to 9; -- Unidade das horas
+
+begin
+
+    -- Relógio que conta os segundos, minutos e horas
+    process(clk, nRst)
+    begin
+        if nRst = '0' then
+            -- Reset do timer
+            ticks <= 0;
+            s <= 0;
+            m <= 0;
+            h <= 0;
+        elsif clk'event and clk = '1' then
+            -- Contagem
+            if ticks = clockFreq - 1 then   -- Conta 1 s
+                ticks <= 0;
+                if s = 59 then              -- Conta 1 min
+                    s <= 0;
+                    if m = 59 then          -- Conta 1 h
+                        m <= 0;
+                        if h = 23 then      -- Conta 1 dia
+                            h <= 0;
+                        else
+                            h <= h + 1;
+                        end if;
+                    else
+                        m <= m + 1;
+                    end if;
+                else
+                    s <= s + 1;
+                end if;
+            else 
+                ticks <= ticks + 1;
+            end if;
+        end if;
+    end process;
+
+    -- Divisão das unidades
+    digito_seg <= s mod 10;  -- Unidade dos segundos
+    digito_min <= m mod 10;  -- Unidade dos minutos
+    digito_hora <= h mod 10; -- Unidade das horas
+
+    -- Decodificador para cada segmento de display
+    DecodificadorSegundos: entity work.Decodificador
+        port map (
+            digito => digito_seg,
+            segmentos => segmentos_seg
+        );
+
+    DecodificadorMinutos: entity work.Decodificador
+        port map (
+            digito => digito_min,
+            segmentos => segmentos_min
+        );
+
+    DecodificadorHoras: entity work.Decodificador
+        port map (
+            digito => digito_hora,
+            segmentos => segmentos_hora
+        );
+
+end Comportamento;
