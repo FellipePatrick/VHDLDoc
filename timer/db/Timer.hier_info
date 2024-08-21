@@ -87,30 +87,51 @@ nRst => ticks[22].ACLR
 nRst => ticks[23].ACLR
 nRst => ticks[24].ACLR
 nRst => ticks[25].ACLR
-segmentos_seg[0] <= decodificador:DecodificadorSegundos.segmentos[0]
-segmentos_seg[1] <= decodificador:DecodificadorSegundos.segmentos[1]
-segmentos_seg[2] <= decodificador:DecodificadorSegundos.segmentos[2]
-segmentos_seg[3] <= decodificador:DecodificadorSegundos.segmentos[3]
-segmentos_seg[4] <= decodificador:DecodificadorSegundos.segmentos[4]
-segmentos_seg[5] <= decodificador:DecodificadorSegundos.segmentos[5]
-segmentos_seg[6] <= decodificador:DecodificadorSegundos.segmentos[6]
-segmentos_min[0] <= decodificador:DecodificadorMinutos.segmentos[0]
-segmentos_min[1] <= decodificador:DecodificadorMinutos.segmentos[1]
-segmentos_min[2] <= decodificador:DecodificadorMinutos.segmentos[2]
-segmentos_min[3] <= decodificador:DecodificadorMinutos.segmentos[3]
-segmentos_min[4] <= decodificador:DecodificadorMinutos.segmentos[4]
-segmentos_min[5] <= decodificador:DecodificadorMinutos.segmentos[5]
-segmentos_min[6] <= decodificador:DecodificadorMinutos.segmentos[6]
-segmentos_hora[0] <= decodificador:DecodificadorHoras.segmentos[0]
-segmentos_hora[1] <= decodificador:DecodificadorHoras.segmentos[1]
-segmentos_hora[2] <= decodificador:DecodificadorHoras.segmentos[2]
-segmentos_hora[3] <= decodificador:DecodificadorHoras.segmentos[3]
-segmentos_hora[4] <= decodificador:DecodificadorHoras.segmentos[4]
-segmentos_hora[5] <= decodificador:DecodificadorHoras.segmentos[5]
-segmentos_hora[6] <= decodificador:DecodificadorHoras.segmentos[6]
+segmentos_seg_u[0] <= decodificador:DecodificadorSegundosU.segmentos[0]
+segmentos_seg_u[1] <= decodificador:DecodificadorSegundosU.segmentos[1]
+segmentos_seg_u[2] <= decodificador:DecodificadorSegundosU.segmentos[2]
+segmentos_seg_u[3] <= decodificador:DecodificadorSegundosU.segmentos[3]
+segmentos_seg_u[4] <= decodificador:DecodificadorSegundosU.segmentos[4]
+segmentos_seg_u[5] <= decodificador:DecodificadorSegundosU.segmentos[5]
+segmentos_seg_u[6] <= decodificador:DecodificadorSegundosU.segmentos[6]
+segmentos_seg_d[0] <= decodificador:DecodificadorSegundosD.segmentos[0]
+segmentos_seg_d[1] <= decodificador:DecodificadorSegundosD.segmentos[1]
+segmentos_seg_d[2] <= decodificador:DecodificadorSegundosD.segmentos[2]
+segmentos_seg_d[3] <= decodificador:DecodificadorSegundosD.segmentos[3]
+segmentos_seg_d[4] <= decodificador:DecodificadorSegundosD.segmentos[4]
+segmentos_seg_d[5] <= decodificador:DecodificadorSegundosD.segmentos[5]
+segmentos_seg_d[6] <= decodificador:DecodificadorSegundosD.segmentos[6]
+segmentos_min_u[0] <= decodificador:DecodificadorMinutosU.segmentos[0]
+segmentos_min_u[1] <= decodificador:DecodificadorMinutosU.segmentos[1]
+segmentos_min_u[2] <= decodificador:DecodificadorMinutosU.segmentos[2]
+segmentos_min_u[3] <= decodificador:DecodificadorMinutosU.segmentos[3]
+segmentos_min_u[4] <= decodificador:DecodificadorMinutosU.segmentos[4]
+segmentos_min_u[5] <= decodificador:DecodificadorMinutosU.segmentos[5]
+segmentos_min_u[6] <= decodificador:DecodificadorMinutosU.segmentos[6]
+segmentos_min_d[0] <= decodificador:DecodificadorMinutosD.segmentos[0]
+segmentos_min_d[1] <= decodificador:DecodificadorMinutosD.segmentos[1]
+segmentos_min_d[2] <= decodificador:DecodificadorMinutosD.segmentos[2]
+segmentos_min_d[3] <= decodificador:DecodificadorMinutosD.segmentos[3]
+segmentos_min_d[4] <= decodificador:DecodificadorMinutosD.segmentos[4]
+segmentos_min_d[5] <= decodificador:DecodificadorMinutosD.segmentos[5]
+segmentos_min_d[6] <= decodificador:DecodificadorMinutosD.segmentos[6]
+segmentos_hora_u[0] <= decodificador:DecodificadorHorasU.segmentos[0]
+segmentos_hora_u[1] <= decodificador:DecodificadorHorasU.segmentos[1]
+segmentos_hora_u[2] <= decodificador:DecodificadorHorasU.segmentos[2]
+segmentos_hora_u[3] <= decodificador:DecodificadorHorasU.segmentos[3]
+segmentos_hora_u[4] <= decodificador:DecodificadorHorasU.segmentos[4]
+segmentos_hora_u[5] <= decodificador:DecodificadorHorasU.segmentos[5]
+segmentos_hora_u[6] <= decodificador:DecodificadorHorasU.segmentos[6]
+segmentos_hora_d[0] <= decodificador:DecodificadorHorasD.segmentos[0]
+segmentos_hora_d[1] <= decodificador:DecodificadorHorasD.segmentos[1]
+segmentos_hora_d[2] <= decodificador:DecodificadorHorasD.segmentos[2]
+segmentos_hora_d[3] <= decodificador:DecodificadorHorasD.segmentos[3]
+segmentos_hora_d[4] <= decodificador:DecodificadorHorasD.segmentos[4]
+segmentos_hora_d[5] <= decodificador:DecodificadorHorasD.segmentos[5]
+segmentos_hora_d[6] <= decodificador:DecodificadorHorasD.segmentos[6]
 
 
-|Timer|Decodificador:DecodificadorSegundos
+|Timer|Decodificador:DecodificadorSegundosU
 digito[0] => Mux0.IN19
 digito[0] => Mux1.IN10
 digito[0] => Mux2.IN10
@@ -145,7 +166,7 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Timer|Decodificador:DecodificadorMinutos
+|Timer|Decodificador:DecodificadorSegundosD
 digito[0] => Mux0.IN19
 digito[0] => Mux1.IN10
 digito[0] => Mux2.IN10
@@ -180,7 +201,112 @@ segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Timer|Decodificador:DecodificadorHoras
+|Timer|Decodificador:DecodificadorMinutosU
+digito[0] => Mux0.IN19
+digito[0] => Mux1.IN10
+digito[0] => Mux2.IN10
+digito[0] => Mux3.IN19
+digito[0] => Mux4.IN10
+digito[0] => Mux5.IN19
+digito[0] => Mux6.IN19
+digito[1] => Mux0.IN18
+digito[1] => Mux1.IN9
+digito[1] => Mux2.IN9
+digito[1] => Mux3.IN18
+digito[1] => Mux4.IN9
+digito[1] => Mux5.IN18
+digito[1] => Mux6.IN18
+digito[2] => Mux0.IN17
+digito[2] => Mux1.IN8
+digito[2] => Mux2.IN8
+digito[2] => Mux3.IN17
+digito[2] => Mux4.IN8
+digito[2] => Mux5.IN17
+digito[2] => Mux6.IN17
+digito[3] => Mux0.IN16
+digito[3] => Mux3.IN16
+digito[3] => Mux5.IN16
+digito[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Timer|Decodificador:DecodificadorMinutosD
+digito[0] => Mux0.IN19
+digito[0] => Mux1.IN10
+digito[0] => Mux2.IN10
+digito[0] => Mux3.IN19
+digito[0] => Mux4.IN10
+digito[0] => Mux5.IN19
+digito[0] => Mux6.IN19
+digito[1] => Mux0.IN18
+digito[1] => Mux1.IN9
+digito[1] => Mux2.IN9
+digito[1] => Mux3.IN18
+digito[1] => Mux4.IN9
+digito[1] => Mux5.IN18
+digito[1] => Mux6.IN18
+digito[2] => Mux0.IN17
+digito[2] => Mux1.IN8
+digito[2] => Mux2.IN8
+digito[2] => Mux3.IN17
+digito[2] => Mux4.IN8
+digito[2] => Mux5.IN17
+digito[2] => Mux6.IN17
+digito[3] => Mux0.IN16
+digito[3] => Mux3.IN16
+digito[3] => Mux5.IN16
+digito[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Timer|Decodificador:DecodificadorHorasU
+digito[0] => Mux0.IN19
+digito[0] => Mux1.IN10
+digito[0] => Mux2.IN10
+digito[0] => Mux3.IN19
+digito[0] => Mux4.IN10
+digito[0] => Mux5.IN19
+digito[0] => Mux6.IN19
+digito[1] => Mux0.IN18
+digito[1] => Mux1.IN9
+digito[1] => Mux2.IN9
+digito[1] => Mux3.IN18
+digito[1] => Mux4.IN9
+digito[1] => Mux5.IN18
+digito[1] => Mux6.IN18
+digito[2] => Mux0.IN17
+digito[2] => Mux1.IN8
+digito[2] => Mux2.IN8
+digito[2] => Mux3.IN17
+digito[2] => Mux4.IN8
+digito[2] => Mux5.IN17
+digito[2] => Mux6.IN17
+digito[3] => Mux0.IN16
+digito[3] => Mux3.IN16
+digito[3] => Mux5.IN16
+digito[3] => Mux6.IN16
+segmentos[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Timer|Decodificador:DecodificadorHorasD
 digito[0] => Mux0.IN19
 digito[0] => Mux1.IN10
 digito[0] => Mux2.IN10

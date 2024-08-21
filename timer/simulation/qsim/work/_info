@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felli\Repositorio GitHub\VHDLDoc\timer\simulation\qsim
+vTimer
+Z1 !s100 LZ?J3jCW^A96YQh=6>L781
+Z2 I8cN35dTcM=d:HoJ:c<MFB2
+Z3 VH?aL>CTVP1`K`9OXo0^b;0
+Z4 dC:\Users\felli\Repositorio GitHub\VHDLDoc\timer\simulation\qsim
+Z5 w1724231384
+Z6 8Timer.vo
+Z7 FTimer.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Timer.vo|
+Z10 o-work work -O0
+Z11 n@timer
+!i10b 1
+!s85 0
+Z12 !s108 1724231385.216000
+Z13 !s107 Timer.vo|
+!s101 -O0
+vTimer_vlg_check_tst
+!i10b 1
+Z14 !s100 8VA9PiWRh14L07=7ImQKJ0
+Z15 IcBzLd?VZTI>kK[e?@I^@Q2
+Z16 VJb60VEaK@lNg<LJjNJaSC2
+R4
+R5
+Z17 8Timer.vt
+Z18 FTimer.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1724231385.312000
+Z20 !s107 Timer.vt|
+Z21 !s90 -work|work|Timer.vt|
+!s101 -O0
+R10
+Z22 n@timer_vlg_check_tst
+vTimer_vlg_sample_tst
+!i10b 1
+Z23 !s100 gWca<h?kdZgb^FCVKXkR62
+Z24 IBKUFD3IU9Pc7KUB?E9=K^0
+Z25 VK;;CmALh55BhNXeBQ>JE_1
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@timer_vlg_sample_tst
+vTimer_vlg_vec_tst
+!i10b 1
+!s100 ==R?PF5O=nQ1M^K9i^1eg2
+Ig?7Em7kj4>jLYCbQL0NYg1
+Z27 VT1D=5_3F1C@bfN^UPAd7J3
+R4
+R5
+R17
+R18
+Z28 L0 931
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@timer_vlg_vec_tst
