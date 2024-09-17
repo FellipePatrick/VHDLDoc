@@ -14,17 +14,17 @@ begin
     process(digito)
     begin
         case digito is
-            when 0 => segmentos <= "1111110"; 
-            when 1 => segmentos <= "0110000"; 
-            when 2 => segmentos <= "1101101"; 
-            when 3 => segmentos <= "1111001"; 
-            when 4 => segmentos <= "0110011"; 
-            when 5 => segmentos <= "1011011";
-            when 6 => segmentos <= "1011111";
-            when 7 => segmentos <= "1110000"; 
-            when 8 => segmentos <= "1111111";
-            when 9 => segmentos <= "1111011"; 
-            when others => segmentos <= "0000000"; 
+            when 0 => segmentos <= "0000001"; 
+            when 1 => segmentos <= "1001111"; 
+            when 2 => segmentos <= "0010010"; 
+            when 3 => segmentos <= "0000110"; 
+            when 4 => segmentos <= "1001100"; 
+            when 5 => segmentos <= "0100100";
+            when 6 => segmentos <= "0100000";
+            when 7 => segmentos <= "0001111"; 
+            when 8 => segmentos <= "0000000";
+            when 9 => segmentos <= "0000100"; 
+            when others => segmentos <= "1111111"; 
         end case;
     end process;
 end comportamento;

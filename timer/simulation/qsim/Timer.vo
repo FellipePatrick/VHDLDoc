@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "08/21/2024 06:09:44"
+// DATE "08/21/2024 07:18:13"
 
 // 
 // Device: Altera EP2C35F672C8 Package FBGA672
@@ -552,9 +552,9 @@ wire \Div2|auto_generated|divider|divider|add_sub_5_result_int[5]~8_combout ;
 wire \DecodificadorHorasD|Mux0~0_combout ;
 wire \DecodificadorHorasD|Mux3~0_combout ;
 wire \DecodificadorHorasD|Mux2~0_combout ;
+wire [5:0] m;
 wire [5:0] h;
 wire [25:0] ticks;
-wire [5:0] m;
 wire [5:0] s;
 
 

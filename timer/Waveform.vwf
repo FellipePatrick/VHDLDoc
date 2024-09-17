@@ -544,9 +544,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
+			REPEAT = 160;
+			LEVEL 0 FOR 0.5;
+			LEVEL 1 FOR 0.5;
 		}
 	}
 }
